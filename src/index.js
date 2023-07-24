@@ -70,15 +70,45 @@ butTon.textContent = "Başlayın";
 const img13 = document.getElementById("cta-img");
 img13.setAttribute("src", "http://localhost:9000/img/cta.png");
 
-const baslik2 = document.querySelector(
-  "main-content > top-content > text-content > h4"
+const baslik1 = document.querySelectorAll(
+  ".main-content > .top-content > .text-content > h4"
 );
-baslik2.textContent = "Özellikler";
+const paragraf1 = document.querySelectorAll(
+  ".main-content > .top-content > .text-content > P"
+);
+baslik1[0].textContent = "Özellikler";
+paragraf1[0].textContent =
+  "Özellikler içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+baslik1[1].textContent = "Hakkında";
+paragraf1[1].textContent =
+  "Hakkında içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+const img14 = document.getElementById("middle-img");
+img14.setAttribute("src", "http://localhost:9000/img/accent.png");
 
-const paragraf1 = document.querySelector(
-  "main-content > top-content >text-content > p"
+const baslik2 = document.querySelectorAll(
+  ".main-content > .bottom-content > .text-content > h4"
 );
-paragraf1.textContent =
-  "Özellikler içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,  in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
-const baslik3 = document.querySelector("top-content > text-content > h4");
-baslik3.textContent = "Hakkında";
+const paragraf2 = document.querySelectorAll(
+  ".main-content > .bottom-content > .text-content > P"
+);
+baslik2[0].textContent = "Servisler";
+paragraf2[0].textContent =
+  "Servisler içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio,in interdutm nisi. Suspendisse eu ornare nisl.Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+baslik2[1].textContent = "Ürünler";
+paragraf2[1].textContent =
+  "Ürünler içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+baslik2[2].textContent = "Vizyon";
+paragraf2[2].textContent =
+  "Vizyon içeriği elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
+
+const contact2 = document.querySelector(".contact > h4");
+contact2.textContent = "İletişim";
+const contact3 = document.querySelectorAll(".contact > p");
+contact3[0].textContent =
+  "100 numara Bilmem ne sokak Ankara'da bir semt, Türkiye";
+contact3[1].textContent = "+90 (123) 456-7899";
+contact3[2].textContent = "satis@birsirketsitesi.com.tr";
+
+const footer1 = document.querySelector("footer > a");
+footer1.setAttribute("class", "bold");
+footer1.textContent = "Copyright Bir Şirket Sitesi 2022";
